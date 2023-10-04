@@ -1,5 +1,6 @@
 public class Main{
 public static void main(String[] args) {
-    VirtualPet p = new VirtualPet();
-    p.setImage("sekelton");
+    VirtualPet p1 = new VirtualPet();
+    p1.feed();
+    p1.kill();
 }}

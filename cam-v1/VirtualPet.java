@@ -36,4 +36,8 @@ public class VirtualPet {
         face.setImage("asleep");
     }
 
+    public void kill(){
+        face.setImage("skeleton");
+    }
+
 } // end Virtual Pet
