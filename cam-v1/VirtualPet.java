@@ -33,7 +33,7 @@ public class VirtualPet {
     
     public void sleep() {
         hunger = hunger + 1;
-        face.setImage("asleep");
+        face.setImage("skeleton");
     }
 
     public void kill(){
