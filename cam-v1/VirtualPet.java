@@ -6,7 +6,8 @@
 public class VirtualPet {
     
     VirtualPetFace face;
-    int hunger = 0;   // how hungry the pet is.
+    private int hunger = 0;   // how hungry the pet is.
+    private int tiredness=0;
     
     // constructor
     public VirtualPet() {
@@ -27,8 +28,15 @@ public class VirtualPet {
     
     public void exercise() {
         hunger = hunger + 3;
-        face.setMessage("1, 2, 3, jump.  Whew.");
-        face.setImage("tired");
+        tiredness++;
+        if (tiredness<4){
+            face.setMessage("That was great");
+            face.setImage("ecstatic");
+        }
+        else{
+            face.setMessage("1, 2, 3, jump.  Whew.");
+            face.setImage("tired");
+        }
     }
     
     public void sleep() {
@@ -37,3 +45,4 @@ public class VirtualPet {
     }
 
 } // end Virtual Pet
+ 
