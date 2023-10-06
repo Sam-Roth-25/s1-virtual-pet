@@ -11,7 +11,7 @@ public class VirtualPet {
     // constructor
     public VirtualPet() {
         face = new VirtualPetFace();
-        face.setImage("skeleton");
+        face.setImage("normal");
         face.setMessage("Hello.");
     }
     
@@ -22,18 +22,18 @@ public class VirtualPet {
             hunger = 0;
         }
         face.setMessage("Yum, thanks");
-        face.setImage("skeleton");
+        face.setImage("normal");
     }
     
     public void exercise() {
         hunger = hunger + 3;
         face.setMessage("1, 2, 3, jump.  Whew.");
-        face.setImage("skeleton");
+        face.setImage("tired");
     }
     
     public void sleep() {
         hunger = hunger + 1;
-        face.setImage("skeleton");
+        face.setImage("asleep");
     }
 
 } // end Virtual Pet
