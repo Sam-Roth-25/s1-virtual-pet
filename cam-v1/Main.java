@@ -1,16 +1,28 @@
+import javax.swing.*;
 public class Main{
 
     public Main(){
     VirtualPet p = new VirtualPet();
-    p.exercise();
-    pause(5);
+    p.sleep();
+    pause(5000);
     p.feed();
-    pause(5);
+    pause(5000);
     p.exercise();
     }
 
-    public void pause(int seconds){try {
-        Thread.sleep(seconds);
+    public String getR(String q){
+        String s = (String)JOptionPane.showInputDialog(
+            new JFrame(),
+            "Your Message",
+            "Your Title",
+            JOptionPane.PLAIN_MESSAGE
+        );
+        return s;
+
+    }
+
+    public void pause(int milliseconds){try {
+        Thread.sleep(milliseconds);
     } catch(Exception e){
     
     }}
