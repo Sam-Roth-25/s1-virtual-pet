@@ -7,14 +7,17 @@ public class Main{
     pause(5000);
     p.feed();
     pause(5000);
-    p.exercise();
+    p.death();
+    pause(3000);
+    System.out.println(getR("how was your day?"));
+    p.angel();
     }
 
     public String getR(String q){
         String s = (String)JOptionPane.showInputDialog(
             new JFrame(),
-            "Your Message",
-            "Your Title",
+            q,
+            "get a response",
             JOptionPane.PLAIN_MESSAGE
         );
         return s;

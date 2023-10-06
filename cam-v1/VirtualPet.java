@@ -37,7 +37,10 @@ public class VirtualPet {
     }
 
     public void death(){
-        face.setImage("");
+        face.setImage("skeleton");
+    }
+    public void angel(){
+        face.setImage("angel");
     }
 
 } // end Virtual Pet
