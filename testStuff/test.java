@@ -3,7 +3,7 @@ package testStuff;
 import javax.swing.*;
 
 public class test {
-public static void main(String[] args) {
+public static int main(String[] args) {
     Object[] options = {
         "Yes",
         "No"};
@@ -15,6 +15,6 @@ public static void main(String[] args) {
     null,
     options,
     options[1]);
-    System.out.println(n);
+    return n;
     }
 }
