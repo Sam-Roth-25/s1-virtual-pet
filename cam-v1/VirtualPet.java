@@ -60,4 +60,10 @@ public class VirtualPet {
         return n;
     }
 
+    public void message(String message, String title){
+        JOptionPane.showMessageDialog(new JFrame(),
+    message, title,
+    JOptionPane.PLAIN_MESSAGE);
+    }
+
 } // end Virtual Pet
