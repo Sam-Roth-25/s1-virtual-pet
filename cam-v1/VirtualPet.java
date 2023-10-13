@@ -3,6 +3,10 @@
  * @author Cam
  * @author ?
  */
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class VirtualPet {
     
     VirtualPetFace face;
@@ -41,6 +45,19 @@ public class VirtualPet {
     }
     public void angel(){
         face.setImage("angel");
+    }
+
+    public int dialog(String answerA, String answerB, String question, String title){
+        Object[] options = {answerA, answerB};
+        int n = JOptionPane.showOptionDialog(new JFrame(),
+        question,
+        title,
+        JOptionPane.YES_NO_OPTION,
+        JOptionPane.QUESTION_MESSAGE,
+        null,
+        options,
+        options[1]);
+        return n;
     }
 
 } // end Virtual Pet

@@ -3,14 +3,7 @@ public class Main{
 
     public Main(){
     VirtualPet p = new VirtualPet();
-    p.sleep();
-    pause(5000);
-    p.feed();
-    pause(5000);
-    p.death();
-    pause(3000);
-    System.out.println(getR("how was your day?"));
-    p.angel();
+    p.dialog("yes", "no","can i type?","the answer is no");
     }
 
     public String getR(String q){
