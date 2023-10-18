@@ -81,5 +81,26 @@ public class VirtualPet {
     JOptionPane.PLAIN_MESSAGE);
     }
 
+    public void hungry(){
+        face.setImage("hungry");
+    }
+    public void joyful(){
+        face.setImage("joyful");
+    }
+    public void ladder(){
+        face.setImage("ladder");
+    }
+    public void ecstatic(){
+        face.setImage("ecstatic");
+    }
+    public void dead(){
+        face.setImage("dead");
+    }
+    public void jam(){
+        face.setImage("jam");
+    }
+
+
+
 } // end Virtual Pet
  
